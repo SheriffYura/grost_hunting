@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Comforter+Brush&family=Marck+Script&family=Meddon&family=Underdog&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow: hidden;
+  counter-reset: hit;
+  position: relative;
+  background-image: url(img/958068-halloween-backgrounds-2400x1805-tablet.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 bottom;
+  color: rgb(0, 0, 0);
+  cursor: url(img/19_icon-icons.com_73796.png), crosshair;
+}
+
+input:checked {
+  counter-increment: hit;
+}
+input:checked + label {
+  display: none;
+}
+
+.result {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: sans-serif;
+  font-size: 70px;
+  font-weight: bold;
+  font-family: "Amatic SC", cursive;
+  color: rgb(255, 255, 255);
+}
+
+.result::after {
+  content: counter(hit);
+}
+
+.grosts1 {
+  /* outline: 1px solid red; */
+  width: 62px;
+  height: 56px;
+  overflow: hidden;
+  position: relative;
+  top: 50%;
+  left: -80px;
+}
+
+.grosts1 label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/2GDU.gif);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  cursor: url(img/19_icon-icons.com_73796.png), crosshair;
+}
+
+.grosts1 input {
+  position: absolute;
+  left: -200px;
+}
+
+.grost11 {
+  animation-name: fly11;
+  animation-duration: 10s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+.grost12 {
+  animation: fly12 20s 2;
+  animation-delay: 13s;
+}
+.grost13 {
+  animation: fly13 15s 2;
+  animation-delay: 30s;
+}
+
+@keyframes fly11 {
+  0 {
+    top: 50%;
+    left: 1%;
+  }
+  25% {
+    top: 15%;
+    left: 25%;
+  }
+  50% {
+    top: 20%;
+    left: 65%;
+    transform: rotate(90deg);
+  }
+  75% {
+    top: 20%;
+    left: 25%;
+    transform: rotate(-180deg);
+  }
+  100% {
+    top: 95%;
+    left: 120%;
+    transform: rotate(-250deg);
+  }
+}
+@keyframes fly12 {
+  0 {
+    top: 60%;
+    left: 10%;
+  }
+  25% {
+    top: 60%;
+    left: 60%;
+    transform: rotate(90deg);
+  }
+  50% {
+    top: 23%;
+    left: 20%;
+    transform: rotate(-200deg);
+  }
+  75% {
+    top: 60%;
+    left: 10%;
+    transform: rotate(120deg);
+  }
+  100% {
+    top: 5%;
+    left: 110%;
+  }
+}
+@keyframes fly13 {
+  0 {
+    top: 90%;
+    left: 3%;
+  }
+  25% {
+    top: 30%;
+    left: 23%;
+    transform: rotate(180deg);
+  }
+  50% {
+    top: 64%;
+    left: 20%;
+    transform: rotate(-180deg);
+  }
+  75% {
+    top: 30%;
+    left: 60%;
+    transform: rotate(180deg);
+  }
+  100% {
+    top: 95%;
+    left: 110%;
+  }
+}
+.grosts2 {
+  /* outline: 1px solid red; */
+  width: 80px;
+  height: 76px;
+  overflow: hidden;
+  position: relative;
+  top: 20%;
+  right: -120%;
+}
+
+.grosts2 label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/zYj.gif);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  cursor: url(img/19_icon-icons.com_73796.png), crosshair;
+}
+
+.grosts2 input {
+  position: absolute;
+  right: -200%;
+}
+.grost21 {
+  animation-name: fly21;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+}
+.grost22 {
+  animation: fly22 8s 2;
+  animation-delay: 9s;
+}
+.grost23 {
+  animation: fly23 7s 2;
+  animation-delay: 15s;
+}
+@keyframes fly21 {
+  0 {
+    top: 50%;
+    right: -90%;
+  }
+  25% {
+    top: 13%;
+    right: -60%;
+  }
+  50% {
+    top: 60%;
+    right: -70%;
+    transform: rotate(90deg);
+  }
+  75% {
+    top: 30%;
+    right: -10%;
+    transform: rotate(-180deg);
+  }
+  100% {
+    top: 95%;
+    right: 40%;
+    transform: rotate(-250deg);
+  }
+}
+@keyframes fly22 {
+  0 {
+    top: 10%;
+    right: -70%;
+  }
+  25% {
+    top: 30%;
+    right: -75%;
+    transform: rotate(30deg);
+  }
+  50% {
+    top: 40%;
+    right: -40%;
+    transform: rotate(100deg);
+  }
+  75% {
+    top: 0%;
+    right: -5%;
+    transform: rotate(-30deg);
+  }
+  100% {
+    top: 5%;
+    right: 20%;
+  }
+}
+@keyframes fly23 {
+  0 {
+    top: 60%;
+    right: -50%;
+  }
+  25% {
+    top: 25%;
+    right: -80%;
+    transform: rotate(20deg);
+  }
+  50% {
+    top: 40%;
+    right: -40%;
+    transform: rotate(-80deg);
+  }
+  75% {
+    top: 50%;
+    right: -60%;
+    transform: rotate(250deg);
+  }
+  100% {
+    top: 9%;
+    right: 10%;
+    transform: rotate(300deg);
+  }
+}
